@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="22" started-at="2017-11-20T03:32:57Z" finished-at="2017-11-20T03:32:57Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="22" started-at="2017-11-20T03:32:57Z" finished-at="2017-11-20T03:32:57Z">
+      <class name="TestNGModifierChange">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestNGModifierChange@129a8472]" name="setUpClass" is-config="true" duration-ms="7" started-at="2017-11-20T06:32:57Z" finished-at="2017-11-20T06:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="changeTest(java.lang.String)[pri:0, instance:TestNGModifierChange@129a8472]" name="changeTest" duration-ms="2" started-at="2017-11-20T06:32:57Z" data-provider="changeTest" finished-at="2017-11-20T06:32:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- changeTest -->
+      </class> <!-- TestNGModifierChange -->
+      <class name="TestNGModifierGet">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestNGModifierGet@1b0375b3]" name="setUpClass" is-config="true" duration-ms="0" started-at="2017-11-20T06:32:57Z" finished-at="2017-11-20T06:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="getTest()[pri:0, instance:TestNGModifierGet@1b0375b3]" name="getTest" duration-ms="0" started-at="2017-11-20T06:32:57Z" finished-at="2017-11-20T06:32:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTest -->
+      </class> <!-- TestNGModifierGet -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
