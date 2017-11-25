@@ -1,0 +1,2 @@
+Notify: search current JDK in Windows registry at(SOFTWARE\JavaSoft\Java Development Kit)	[MsgId: MMSG-22198]	[MsgId: MMSG-22986]
+Notify: JDK found at C:/Program Files/Java/jdk1.8.0_131	[MsgId: MMSG-22194]	[MsgId: MMSG-22986]

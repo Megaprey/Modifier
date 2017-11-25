@@ -4,7 +4,7 @@ public class Modifier {
 
     private volatile static Modifier instance;
     private ArrayList<String>  mass = new ArrayList<String>(100);
-    private int counterPopulateCalls;
+    private volatile int counterPopulateCalls;
 
     public ArrayList<String> getMass() {
         return mass;
@@ -23,7 +23,7 @@ public class Modifier {
         return instance;
     }
 
-    public void populate(){
+    public synchronized void populate(){
         String value;
         if(counterPopulateCalls == 0){
             for(int i = 0; i < 100; i++) {

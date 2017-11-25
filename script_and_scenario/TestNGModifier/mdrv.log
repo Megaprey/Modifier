@@ -1,0 +1,30 @@
+Notify: search current JDK in Windows registry at(SOFTWARE\JavaSoft\Java Development Kit)
+Notify: JDK found at C:/Program Files/Java/jdk1.8.0_131
+Virtual User Script started at: 25.11.2017 8:19:31
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Actions.
+Actions.java(18): Notify: Transaction "TestNGModifierChange" started.
+System.out: testFail                                                                                                                                                      Notify:
+System.out: 
+===============================================
+TestNGModifier
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+                                                                                                                                                      Notify:
+System.out: 
+===============================================
+TestNGModifier
+Total tests run: 1, Failures: 1, Skips: 0
+===============================================
+                                                                                                                                                      Notify:
+Actions.java(23): Notify: Transaction "TestNGModifierChange" ended with a "Fail" status (Duration: 0,4434).
+Actions.java(23): Notify: Transaction "TestNGModifierChange" has 0 error message(s).
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

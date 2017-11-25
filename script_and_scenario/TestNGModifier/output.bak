@@ -1,0 +1,27 @@
+Virtual User Script started at: 25.11.2017 8:19:00
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Actions.
+Actions.java(18): Notify: Transaction "TestNGModifierChange" started.
+System.out: testFail                                                                                                                                                      Notify:
+System.out: 
+===============================================
+TestNGModifier
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+                                                                                                                                                      Notify:
+System.out: 
+===============================================
+TestNGModifier
+Total tests run: 1, Failures: 0, Skips: 0
+===============================================
+                                                                                                                                                      Notify:
+Actions.java(23): Notify: Transaction "TestNGModifierChange" ended with a "Pass" status (Duration: 0,4007).
+Ending action Actions.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
