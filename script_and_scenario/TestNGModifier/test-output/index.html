@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-TestNGModifier">
-              <span class="suite-name border-passed">TestNGModifier</span>
+            <a href="#" class="navigator-link" panel-name="suite-TestNGModifierGet">
+              <span class="suite-name border-failed">TestNGModifierGet</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="test-xml-TestNGModifierGet">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="testlist-TestNGModifierGet">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="group-TestNGModifierGet">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="times-TestNGModifierGet">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="reporter-TestNGModifierGet">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TestNGModifierGet">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-TestNGModifier">
+                  <a href="#" class="navigator-link " panel-name="chronological-TestNGModifierGet">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-TestNGModifier" class="hide-methods passed suite-TestNGModifier"> (hide)</a> <!-- hide-methods passed suite-TestNGModifier -->
-                      <a href="#" panel-name="suite-TestNGModifier" class="show-methods passed suite-TestNGModifier"> (show)</a> <!-- show-methods passed suite-TestNGModifier -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TestNGModifierGet" class="hide-methods failed suite-TestNGModifierGet"> (hide)</a> <!-- hide-methods failed suite-TestNGModifierGet -->
+                      <a href="#" panel-name="suite-TestNGModifierGet" class="show-methods failed suite-TestNGModifierGet"> (show)</a> <!-- show-methods failed suite-TestNGModifierGet -->
                     </span>
-                    <div class="method-list-content passed suite-TestNGModifier">
+                    <div class="method-list-content failed suite-TestNGModifierGet">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-TestNGModifier" title="TestNGModifierGet" hash-for-method="getTest">getTest</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestNGModifierGet" title="TestNGModifierGet" hash-for-method="getTest">getTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-TestNGModifier -->
+                    </div> <!-- method-list-content failed suite-TestNGModifierGet -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +116,10 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-TestNGModifier" class="panel TestNGModifier">
-          <div class="suite-TestNGModifier-class-passed">
+        <div panel-name="suite-TestNGModifierGet" class="panel TestNGModifierGet">
+          <div class="suite-TestNGModifierGet-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">TestNGModifierGet</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,31 +128,39 @@
                   <a name="getTest">
                   </a> <!-- getTest -->
                   <span class="method-name">getTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at TestNGModifierGet.getTest(TestNGModifierGet.java:10)
+	at Actions.testngStart(Actions.java:53)
+	at Actions.action(Actions.java:65)
+	at com.hpe.lr.java.replay.ScriptContainer.invoke(ScriptContainer.java:68)
+	at com.hpe.lr.java.replay.ScriptContainer.action(ScriptContainer.java:59)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestNGModifier-class-passed -->
-        </div> <!-- panel TestNGModifier -->
-        <div panel-name="test-xml-TestNGModifier" class="panel">
+          </div> <!-- suite-TestNGModifierGet-class-failed -->
+        </div> <!-- panel TestNGModifierGet -->
+        <div panel-name="test-xml-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;TestNGModifier&quot;&gt;
+&lt;suite name=&quot;TestNGModifierGet&quot;&gt;
   &lt;test name=&quot;MyTests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestNGModifierGet&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- MyTests --&gt;
-&lt;/suite&gt; &lt;!-- TestNGModifier --&gt;
+&lt;/suite&gt; &lt;!-- TestNGModifierGet --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-TestNGModifier" class="panel">
+        <div panel-name="testlist-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for TestNGModifier</span>
+            <span class="header-content">Tests for TestNGModifierGet</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -162,22 +170,22 @@
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-TestNGModifier" class="panel">
+        <div panel-name="group-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for TestNGModifier</span>
+            <span class="header-content">Groups for TestNGModifierGet</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-TestNGModifier" class="panel">
+        <div panel-name="times-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for TestNGModifier</span>
+            <span class="header-content">Times for TestNGModifierGet</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_TestNGModifier');
-function tableData_TestNGModifier() {
+suiteTableInitFunctions.push('tableData_TestNGModifierGet');
+function tableData_TestNGModifierGet() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -187,46 +195,48 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getTest')
 data.setCell(0, 2, 'TestNGModifierGet')
-data.setCell(0, 3, 0);
-window.suiteTableData['TestNGModifier']= { tableData: data, tableDiv: 'times-div-TestNGModifier'}
+data.setCell(0, 3, 1);
+window.suiteTableData['TestNGModifierGet']= { tableData: data, tableDiv: 'times-div-TestNGModifierGet'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
-              <div id="times-div-TestNGModifier">
-              </div> <!-- times-div-TestNGModifier -->
+              <span class="suite-total-time">Total running time: 1 ms</span>
+              <div id="times-div-TestNGModifierGet">
+              </div> <!-- times-div-TestNGModifierGet -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-TestNGModifier" class="panel">
+        <div panel-name="reporter-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for TestNGModifier</span>
+            <span class="header-content">Reporter output for TestNGModifierGet</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-TestNGModifier" class="panel">
+        <div panel-name="ignored-methods-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-TestNGModifier" class="panel">
+        <div panel-name="chronological-TestNGModifierGet" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">TestNGModifierGet</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">getTest</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getTest</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

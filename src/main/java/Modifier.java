@@ -40,7 +40,7 @@ public class Modifier {
         return mass.get(random);
     }
 
-    public void change(int index, String valueChange){
+    public synchronized void change(int index, String valueChange){
         mass.set(index, valueChange);
     }
 
